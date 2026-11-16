@@ -61,6 +61,5 @@
 - Chat 语音播放报错不再静默结束；等待合成前先解锁同一个播放器，播放失败可点击重试，并保留已合成音频，避免仅因播放受阻重复合成。
 - 单人／群聊语音、视频通话中的语音合成或播放失败时，显示小提示，可重试该句；加载期间不额外弹错误提示，重试不会重新生成台词。
 - MiniMax 增加业务错误码、空音频及无效编码校验，并兼容返回音频下载链接的接口。未使用真实用户密钥调用收费接口，个别设备的无声反馈仍需更新后复测。
-- 本轮不恢复浏览器相关功能。
 
 验证命令：`node scripts/check-share-shell-speech.cjs`、`node scripts/check-share-lock-startup.cjs`、`node scripts/check-android-tts.cjs`、`npm run typecheck`、`npm run android:web`。
